@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--for model viewer-->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.0/viewer3D.min.js"></script>
+    <title>CARDS</title>
+</head>
+<body >
+    
+     <div class="container">
+        <h3>Basic Card</h3>
+    <h4 class="grey-text text-lighten-2"></h4>
+   
+  </div>
+    <section class="section grey lighten-2">
+        <div class="row">
+            <div class="col s12 m4">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Card Title</span>
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card blue-grey darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">Card Title</span>
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4">
+                <div class="card blue-grey darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">Card Title</span>
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                    
+                  </div>
+                </div>
+              </div>
+              <!--ANOTHER CARD-->
+              <h3>FABs in Cards</h3>
+              <section class="section grey lighten-3">
+                <div class="row">
+                    <div class="col s12 m3 l3">
+                      <div class="card z-depth-5">
+                        <div class="card-image">
+                          <img src="AMERICANO.png" alt="" class="materialboxed">
+                          
+                          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col s12 m3 l3">
+                        <div class="card z-depth-5">
+                          <div class="card-image">
+                            <img src="AMERICANO.png" alt="" class="materialboxed">
+                           
+                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                          </div>
+                         
+                        </div>
+                      </div>
+                      <div class="col s12 m3 l3">
+                        <div class="card z-depth-5">
+                          <div class="card-image">
+                            <img src="HAZELNUT.png" alt="" class="materialboxed">
+                            <span class="card-title">Card Title</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                          </div>
+                         
+                        </div>
+                      </div>
+                      <div class="col s12 m3 l3">
+                        <div class="card z-depth-5">
+                          <div class="card-image">
+                            <img src="HAZELNUT.png" alt="" class="materialboxed">
+                            <span class="card-title">Card Title</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                          </div>
+                         
+                        </div>
+                      </div>
+                  </div>
+              </section>
+
+              <!--horizontal-->
+              <div class="row">
+                <div class="col s12 m7">
+                    <h2 class="header">Horizontal Card</h2>
+                    <div class="card horizontal">
+                      <div class="card-image">
+                        <img src="imgs5.jpg" alt="" class="materialboxed">
+                      </div>
+                      <div class="card-stacked">
+                        <div class="card-content">
+                          <p>I am a very simple card. I am good at containing small bits of information.</p>
+                        </div>
+                        <div class="card-action">
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col s12 m7">
+                    <div class="card horizontal">
+                      <div class="card-image">
+                        <img src="imgs6.jpg" alt="" class="materialboxed">
+                      </div>
+                      <div class="card-stacked">
+                        <div class="card-content">
+                          <p>I am a very simple card. I am good at containing small bits of information.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">This is a link</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              
+              <section class="section section-model">
+                <div class="row">
+                  <div class="col s8 offset-s2 m6 l7 push-l5">
+                    <div class="demo">
+                      <model-viewer alt="" src="coffee.glb" auto-rotate camera-controls></model-viewer>
+                    </div>
+                  </div>
+                  
+                </div>
+              </section>
+
+              
+          </div>
+         
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+          var elems= document.querySelectorAll('.materialboxed');
+          M.Materialbox.init(elems);
+          });
+          </script>
+    </section>
+  
+</body>
+</html>
